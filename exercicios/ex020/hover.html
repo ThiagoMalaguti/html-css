@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: yellow;
+            background-color:blue;
+            width: 115px;
+        }
+
+
+        div:hover {
+            color: rgb(0, 26, 255);
+        }
+ 
+    </style>
+</head>
+<body>
+    <h1>exmplo de hover</h1>
+    <p>qlq coisa</p>
+    <div><span id="gol">menu</span>
+        <p>texto escondido</p>
+        <p>produtos</p>
+        <p>minha história</p>
+        <p id="no"><a href="https://www.infomoney.com.br/onde-investir/cristiano-ronaldo-e-processado-por-promover-binance-nos-eua/" target="_blank" rel="external">clientes satisfeitas</a></p>
+    </div>
+    <p>fim do exemplo</p>
+</body>
+</html>
