@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 8px;
+        }
+
+        .cnome {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>tabelas</h1>
+    
+    <table>
+        <colgroup>
+            <col class="cnome" span="2">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="ctrampo">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Ana Clara</td>
+            <td>Feminino</td>
+            <td>27 Anos</td>
+            <td>Médica</td>
+        </tr>
+
+        <tr>
+            <td>Thiago</td>
+            <td>M</td>
+            <td>17 Anos</td>
+            <td>Programador e Pecuarista</td>
+        </tr>
+
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>20 Anos</td>
+            <td>Web Designer</td>
+        </tr>
+
+        <tr>
+            <td>Matheus</td>
+            <td>F</td>
+            <td>16 Anos</td>
+            <td>Programador</td>
+        </tr>
+    </table>
+</body>
+</html>
