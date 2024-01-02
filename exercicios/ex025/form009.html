@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fromularios</title>
+</head>
+<body>
+    <form action="cadastro.php" autocomplete="on" method="get">
+
+        <p>
+            <label for="iok">Ok</label>
+            <input type="range" name="ok" id="iok" min="0" max="11" value="5" oninput="isei.innerHTML = Number(iok.value)">
+            <output  name="sei" id="isei">5</output>
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
