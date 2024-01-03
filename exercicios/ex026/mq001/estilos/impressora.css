@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* estilo para impressoras */
+
+* {
+    margin: 4px;
+    padding: 4px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+article::after {
+    font-weight: bolder;
+    content: 'este artigo foi impresso atraves de Thiago Felipe';
+}
+
+article {
+    width: 100%;
+}
