@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* todas as outras midias */
+/* typical device breakpoints
+pequenas telas: até 600px 
+celular: 600px até 768px
+tablet: 769 até 992px
+desktop: 993 até 1200px
+grandes telas: acima de 1200px
+
+*/
+
+@media print {
+    body {
+background-image: url("../imagens/back-print.jpg"); /*desnecessario*/
+    }
+
+    main h1 {
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        text-shadow: none;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site criado por Thiago Felipe';
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #pressora {display: block;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url("../imagens/back-tablet.jpg");
+    }
+
+    #phone {display: none;}
+    #tablet {display: block;}
+    #pressora {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+/*desktop*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url("../imagens/back-pc.jpg");
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #pressora {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+}
+
+/*telas grandes*/
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url("../imagens/back-tv.jpg");
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #pressora {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}
+}
